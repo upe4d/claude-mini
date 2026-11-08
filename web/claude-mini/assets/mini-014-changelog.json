@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "edition": "free",
+  "platform": "macOS",
+  "version": "0.14.0",
+  "preparedAt": "2026-11-07",
+  "status": "prerelease_native_mac_acceptance_pending",
+  "services": [
+    "Claude",
+    "Gemini"
+  ],
+  "changes": [
+    "Отдельные браузерные комплекты Apple Silicon и Intel",
+    "Запуск .command и мастер из четырёх экранов",
+    "Выбор Claude/Gemini, общий экспорт и собственные точки сравнения вкладок",
+    "CPU, язык, пояс, WebRTC, перенос настроек и экспорт остаются бесплатными",
+    "Нативный Mac и авторизованные сервисы пока не подтверждены"
+  ],
+  "windows": {
+    "version": "0.13.1",
+    "services": [
+      "Claude"
+    ],
+    "history": "../changelog.json"
+  },
+  "repository": "https://github.com/upe4d/claude-mini"
+}

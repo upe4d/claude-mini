@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "url": "https://cenpad.ru/claude-mini/downloads/Claude-mini-Browser-v0.13.1.zip",
+  "file": "Claude-mini-Browser-v0.13.1.zip",
+  "bytes": 825799029,
+  "sha256": "3f932320cad59ffe13165a290baf85979f7f4f16173e668e595992cab6c94c58",
+  "fullCRC": true,
+  "manifestHashes": 53,
+  "smallFiles": 50,
+  "payloads": [
+    {
+      "path": "payload/brave.zip",
+      "bytes": 254190053,
+      "sha256": "2c937c91f5061fb1034097c932112b06f429d5bdd08bc5e32921b88609d011e7",
+      "files": 376,
+      "profileFilesFound": false
+    },
+    {
+      "path": "payload/chrome.zip",
+      "bytes": 209154801,
+      "sha256": "a4e0d57245e167e98a9d465af1e3774d2b4ec9f04e483d19bcd97a6f63cf46dd",
+      "files": 305,
+      "profileFilesFound": false
+    },
+    {
+      "path": "payload/edge.zip",
+      "bytes": 362352631,
+      "sha256": "cd17adf14736b6eaa04076e6f9658a35f74562e69d474c34b667f5515231791b",
+      "files": 495,
+      "profileFilesFound": false
+    }
+  ],
+  "secretMatches": [],
+  "members": 54,
+  "historicalMetadataNote": "Original Free 0.13.1 includes a stale Pro label in extension/release.js; bytes preserved, not a Pro distribution."
+}

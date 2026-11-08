@@ -1,0 +1,236 @@
+{
+  "passed": true,
+  "scope": "Real Chrome on Windows; local overlay fixture, no hosting deployment or external downloads",
+  "checks": [
+    {
+      "name": "Motion engine ready 360 ordinary"
+    },
+    {
+      "name": "Hero distinguishes Windows Claude and preliminary Mac Claude/Gemini 360 ordinary"
+    },
+    {
+      "name": "Three correct download URLs and native Mac pending notice 360 ordinary"
+    },
+    {
+      "name": "Legacy 0.11–0.13 changelog retained 360 ordinary"
+    },
+    {
+      "name": "Pro link remains pro/index.html 360 ordinary"
+    },
+    {
+      "name": "No overflow at hero 360 ordinary",
+      "viewport": 360,
+      "scroll": 360
+    },
+    {
+      "name": "Mobile menu open, Escape and anchor close 360"
+    },
+    {
+      "name": "No overflow at download cards 360",
+      "viewport": 360,
+      "scroll": 360
+    },
+    {
+      "name": "Download anchor reaches platform cards 360"
+    },
+    {
+      "name": "Ordinary motion runs visible feature stories 360"
+    },
+    {
+      "name": "No overflow at feature stories 360",
+      "viewport": 360,
+      "scroll": 360
+    },
+    {
+      "name": "Motion engine ready 390 ordinary"
+    },
+    {
+      "name": "Hero distinguishes Windows Claude and preliminary Mac Claude/Gemini 390 ordinary"
+    },
+    {
+      "name": "Three correct download URLs and native Mac pending notice 390 ordinary"
+    },
+    {
+      "name": "Legacy 0.11–0.13 changelog retained 390 ordinary"
+    },
+    {
+      "name": "Pro link remains pro/index.html 390 ordinary"
+    },
+    {
+      "name": "No overflow at hero 390 ordinary",
+      "viewport": 390,
+      "scroll": 390
+    },
+    {
+      "name": "Mobile menu open, Escape and anchor close 390"
+    },
+    {
+      "name": "No overflow at download cards 390",
+      "viewport": 390,
+      "scroll": 390
+    },
+    {
+      "name": "Download anchor reaches platform cards 390"
+    },
+    {
+      "name": "Ordinary motion runs visible feature stories 390"
+    },
+    {
+      "name": "No overflow at feature stories 390",
+      "viewport": 390,
+      "scroll": 390
+    },
+    {
+      "name": "Motion engine ready 768 ordinary"
+    },
+    {
+      "name": "Hero distinguishes Windows Claude and preliminary Mac Claude/Gemini 768 ordinary"
+    },
+    {
+      "name": "Three correct download URLs and native Mac pending notice 768 ordinary"
+    },
+    {
+      "name": "Legacy 0.11–0.13 changelog retained 768 ordinary"
+    },
+    {
+      "name": "Pro link remains pro/index.html 768 ordinary"
+    },
+    {
+      "name": "No overflow at hero 768 ordinary",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "name": "Mobile menu open, Escape and anchor close 768"
+    },
+    {
+      "name": "No overflow at download cards 768",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "name": "Download anchor reaches platform cards 768"
+    },
+    {
+      "name": "Ordinary motion runs visible feature stories 768"
+    },
+    {
+      "name": "No overflow at feature stories 768",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "name": "Motion engine ready 1440 ordinary"
+    },
+    {
+      "name": "Hero distinguishes Windows Claude and preliminary Mac Claude/Gemini 1440 ordinary"
+    },
+    {
+      "name": "Three correct download URLs and native Mac pending notice 1440 ordinary"
+    },
+    {
+      "name": "Legacy 0.11–0.13 changelog retained 1440 ordinary"
+    },
+    {
+      "name": "Pro link remains pro/index.html 1440 ordinary"
+    },
+    {
+      "name": "No overflow at hero 1440 ordinary",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "name": "Desktop navigation visible 1440"
+    },
+    {
+      "name": "No overflow at download cards 1440",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "name": "Download anchor reaches platform cards 1440"
+    },
+    {
+      "0": {
+        "x": 152,
+        "y": 432,
+        "width": 505.453125,
+        "right": 657.453125
+      },
+      "1": {
+        "x": 681.453125,
+        "y": 432,
+        "width": 606.546875,
+        "right": 1288
+      },
+      "name": "Two platform cards form a desktop grid"
+    },
+    {
+      "name": "Ordinary motion runs visible feature stories 1440"
+    },
+    {
+      "name": "No overflow at feature stories 1440",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "name": "Motion engine ready 1440 still"
+    },
+    {
+      "name": "Hero distinguishes Windows Claude and preliminary Mac Claude/Gemini 1440 still"
+    },
+    {
+      "name": "Three correct download URLs and native Mac pending notice 1440 still"
+    },
+    {
+      "name": "Legacy 0.11–0.13 changelog retained 1440 still"
+    },
+    {
+      "name": "Pro link remains pro/index.html 1440 still"
+    },
+    {
+      "name": "No overflow at hero 1440 still",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "name": "Still/reduced mode displays settled content without active stories still",
+      "reduced": true,
+      "active": 0,
+      "enabled": false
+    },
+    {
+      "name": "Motion engine ready 390 reduced"
+    },
+    {
+      "name": "Hero distinguishes Windows Claude and preliminary Mac Claude/Gemini 390 reduced"
+    },
+    {
+      "name": "Three correct download URLs and native Mac pending notice 390 reduced"
+    },
+    {
+      "name": "Legacy 0.11–0.13 changelog retained 390 reduced"
+    },
+    {
+      "name": "Pro link remains pro/index.html 390 reduced"
+    },
+    {
+      "name": "No overflow at hero 390 reduced",
+      "viewport": 390,
+      "scroll": 390
+    },
+    {
+      "name": "Still/reduced mode displays settled content without active stories reduced",
+      "reduced": true,
+      "active": 0,
+      "enabled": false
+    },
+    {
+      "name": "Read-only test preserved all original and overlay source bytes"
+    }
+  ],
+  "errors": [],
+  "missingResources": [],
+  "externalRequests": [],
+  "browserVersion": "156.0.8078.80"
+}
