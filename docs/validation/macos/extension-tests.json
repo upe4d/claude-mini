@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": [
+    "Claude and Gemini use exact HTTPS hosts",
+    "OAuth, lookalike hosts, credentials, protocol and custom ports rejected",
+    "Export strips query and hash",
+    "Service baselines have distinct keys",
+    "Old exported settings migrate to Claude without losing values",
+    "Saved Gemini settings route to Gemini only",
+    "Unknown or tampered service rejected",
+    "CPU remains available free",
+    "No permanent Claude, Gemini, OAuth or wildcard host access requested",
+    "Only local free scripts loaded",
+    "Current measurements restricted to supported service origin",
+    "Startup waits for settings and opens workspace on subsequent runs",
+    "OAuth navigation detaches configuration"
+  ],
+  "limitations": [
+    "Fixture tests do not confirm current authenticated Gemini DOM or real macOS UI."
+  ]
+}

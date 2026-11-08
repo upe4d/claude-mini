@@ -1,0 +1,14 @@
+{
+  "name": "claude-mini-development",
+  "version": "0.14.0",
+  "private": true,
+  "description": "Инструменты разработчика. Пользователь скачивает готовый архив из GitHub Releases.",
+  "engines": {"node": ">=20.1"},
+  "scripts": {
+    "test": "node macos/tests/extension.test.cjs && node macos/tests/comparison.test.cjs",
+    "test:capture": "node macos/tests/capture.test.cjs",
+    "test:launcher": "node macos/tests/launcher.test.cjs",
+    "test:integration": "node macos/tests/integration.test.cjs"
+  },
+  "devDependencies": {"playwright": "1.62.1"}
+}

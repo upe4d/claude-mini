@@ -1,0 +1,314 @@
+{
+  "source": "https://cenpad.ru/claude-mini/downloads/Claude-mini-Browser-v0.13.1.zip",
+  "archiveBytes": 825799029,
+  "fullArchiveShaNotVerified": true,
+  "crcVerified": true,
+  "files": [
+    {
+      "path": "Browser-sources.txt",
+      "bytes": 707,
+      "sha256": "3c8ed4fd9dabc33f6211731a8d55d392fc18051a9530a4538d884ae6d191af46",
+      "crc32": "cc678db8"
+    },
+    {
+      "path": "Launch.cmd",
+      "bytes": 142,
+      "sha256": "8cf8fff4f200b8a8df09fc7fb4b4a918b33cc29c2bf4eec6968d3c41678c8ed8",
+      "crc32": "cdb3576d"
+    },
+    {
+      "path": "Package-files.json",
+      "bytes": 5707,
+      "sha256": "79a1b62a67db9bebb1f4c2c394f2dc557b234a8744d69303dd8ecefe3943a6cf",
+      "crc32": "2ec72b96"
+    },
+    {
+      "path": "Setup.cmd",
+      "bytes": 141,
+      "sha256": "37b85686d0fd924a0a9ff59fffddada576984b58b4843f03ac7adfadcaed8bb6",
+      "crc32": "63f77dc9"
+    },
+    {
+      "path": "app/FirstRunGuide.ps1",
+      "bytes": 15884,
+      "sha256": "412deb2d4ee34dfecd4ae6f0fa8d73f6b880301a4fbe27a536d27f7ccce84bac",
+      "crc32": "46510b68"
+    },
+    {
+      "path": "app/Install.ps1",
+      "bytes": 588,
+      "sha256": "d0c61b5c70b7d7e116e01086aa4c21c3a86044def7f75e780ea40691e63ba8d7",
+      "crc32": "c2e897d5"
+    },
+    {
+      "path": "app/Launch.ps1",
+      "bytes": 1591,
+      "sha256": "69f07864286b147f007e8c1cab28fe4e4d7a5cefe585966838cbe4be5c1eb3f7",
+      "crc32": "759cbd60"
+    },
+    {
+      "path": "app/PhysicalPath.ps1",
+      "bytes": 4024,
+      "sha256": "ed9b46024fca509a2f02033b68a034bd5d28aeec299bf6a70a0238404b6504a9",
+      "crc32": "bf52705d"
+    },
+    {
+      "path": "app/ResearchRuntime.ps1",
+      "bytes": 824,
+      "sha256": "f2ce60c4807b15db2f1c2ac697f6151219b2fffb13be4e0bde1743e961024ec3",
+      "crc32": "01e5a939"
+    },
+    {
+      "path": "app/Runtime.ps1",
+      "bytes": 10627,
+      "sha256": "61a3d8a9f7b15fcb296517415a43dc2feebf9ceb303104777a1886b492630e66",
+      "crc32": "6f0bf8ee"
+    },
+    {
+      "path": "app/Setup.ps1",
+      "bytes": 12141,
+      "sha256": "89cc5e98b4f147e5cb55004f984526202f34d446081d171de096c09d2e5fbb6e",
+      "crc32": "85f8949f"
+    },
+    {
+      "path": "app/Suite.ps1",
+      "bytes": 6471,
+      "sha256": "359f8a07edec15d27939519a824ba512eaa9b4dbfb782e9ded36bb2746188ddd",
+      "crc32": "cc091b71"
+    },
+    {
+      "path": "app/Workspace.ps1",
+      "bytes": 6924,
+      "sha256": "0160141daf1ba5b6bff237cd981a8b726577a71c78d2e56f222a2f75992eb205",
+      "crc32": "c3f3e767"
+    },
+    {
+      "path": "app/runtimes.json",
+      "bytes": 3329,
+      "sha256": "5df0e58291677fa86b27497eb727f5c5ae1f5c310d0da6d4b6738dee157233d1",
+      "crc32": "cf1db902"
+    },
+    {
+      "path": "extension/background.js",
+      "bytes": 4225,
+      "sha256": "2de3f4e718dc1f5747a8dc69ac6b4c966ccb40ba45b37f579d546a730a51820c",
+      "crc32": "2629bf3e"
+    },
+    {
+      "path": "extension/capture.js",
+      "bytes": 3869,
+      "sha256": "0bb6dfbf51ecc5ac6bbfdb03120ba1acff8581b627d22407385efecb6f65406c",
+      "crc32": "362223dc"
+    },
+    {
+      "path": "extension/chat-formats.js",
+      "bytes": 763,
+      "sha256": "432b852eca784ad9fc2fb9685db5e5f40a9cefdc3027b02c88fd974430607e1d",
+      "crc32": "e94ed1fe"
+    },
+    {
+      "path": "extension/config.js",
+      "bytes": 1187,
+      "sha256": "27c3801086f74aafbf2aa205daa43498546be886835fc97e9a77a11f12c82212",
+      "crc32": "7348c05c"
+    },
+    {
+      "path": "extension/connection-runtime.js",
+      "bytes": 1608,
+      "sha256": "c10d505e69d7669d95eeff0e29ee8e98e42721b4a30767bd764436a82c761aad",
+      "crc32": "300c9fe1"
+    },
+    {
+      "path": "extension/current.js",
+      "bytes": 2433,
+      "sha256": "563325a2f3a4170b6332e7ab2fd20b8830858eed17cb452c7d933bfbd6f9f321",
+      "crc32": "a8ff3363"
+    },
+    {
+      "path": "extension/export.js",
+      "bytes": 899,
+      "sha256": "e5d8e4db7e6dd78f1e890a3e4762283b263a5169dbac49698e99470277c972de",
+      "crc32": "f2e49b6e"
+    },
+    {
+      "path": "extension/guide.css",
+      "bytes": 2456,
+      "sha256": "aa2812b0e1c4fd109eedf31d4cba5bf4e9c8c3b846518865e9bc489caad636da",
+      "crc32": "acf6fb7a"
+    },
+    {
+      "path": "extension/guide.html",
+      "bytes": 8046,
+      "sha256": "c50077ad75cfc08c848bbeb52178efc20496ca83480fececfd845405eaf77af8",
+      "crc32": "82609aa8"
+    },
+    {
+      "path": "extension/guide.js",
+      "bytes": 5725,
+      "sha256": "6bbed52e9304e582b5c64c75aec5dee54efb9b7ba51d2160a70215d5b4f191f5",
+      "crc32": "7e131938"
+    },
+    {
+      "path": "extension/icons/icon-128.png",
+      "bytes": 660,
+      "sha256": "513632f12cbb6923629618c53aee9f98d647034a18e06510390b2eae43b890df",
+      "crc32": "e55da0dd"
+    },
+    {
+      "path": "extension/icons/icon-16.png",
+      "bytes": 127,
+      "sha256": "d23123c19b01ec254cb152c933bb02465fce4db0f35da450e5712e813a873889",
+      "crc32": "ea28ef6c"
+    },
+    {
+      "path": "extension/icons/icon-32.png",
+      "bytes": 195,
+      "sha256": "c5b1b8b5caa31719566f27a5007b762aacbbd14fe3b8ad3be52f462e33b8142e",
+      "crc32": "aab6fe5f"
+    },
+    {
+      "path": "extension/icons/icon-48.png",
+      "bytes": 254,
+      "sha256": "dada2fecc43ed19ef9af7e0be1482bbc732b6b356e52f3b923cadecaac225fe4",
+      "crc32": "6a6ed506"
+    },
+    {
+      "path": "extension/install-info.js",
+      "bytes": 28,
+      "sha256": "20db299336292d92490140582869ca7c1c5055efe3a92f1f75795a3ca3207718",
+      "crc32": "05493252"
+    },
+    {
+      "path": "extension/locale-runtime.js",
+      "bytes": 4246,
+      "sha256": "fa6803d1135933e71234f4599e03ee047759f441741b54c1ad66b973d880b2a3",
+      "crc32": "ec2f8c0e"
+    },
+    {
+      "path": "extension/manifest.json",
+      "bytes": 1649,
+      "sha256": "ac3ba2ffbd4727a82442323087444aac628b8c4a83a93e7db590f1faf028d34a",
+      "crc32": "a9d6fa05"
+    },
+    {
+      "path": "extension/onboarding.html",
+      "bytes": 14617,
+      "sha256": "0ce536bb76805a910ac94fb3d6e94b3796e08a182385fce4361d7b3ba564fcbe",
+      "crc32": "c7494eab"
+    },
+    {
+      "path": "extension/onboarding.js",
+      "bytes": 13763,
+      "sha256": "2ec88ad0d30b69e1c591ca1eb8ebe7a7fc2af9060e7fa21953643568ed8e277e",
+      "crc32": "34ab9757"
+    },
+    {
+      "path": "extension/popup.html",
+      "bytes": 3960,
+      "sha256": "3295d76cd4390b921a765b12e17151a72d1d03cbcd884e4163c2cc42d8b0e67f",
+      "crc32": "adffb262"
+    },
+    {
+      "path": "extension/popup.js",
+      "bytes": 4249,
+      "sha256": "3e601a52ebc5bbe0e84aa228daf8bd0bc1388c0c68ef3ca74aba3af64ffb5438",
+      "crc32": "cf5772d8"
+    },
+    {
+      "path": "extension/portable-guide.js",
+      "bytes": 532,
+      "sha256": "ed6ad3ebc745dc25e55dfadec25c82fc5bada91711bff5bb71c5b532b8d65399",
+      "crc32": "609e6d16"
+    },
+    {
+      "path": "extension/preset.js",
+      "bytes": 73,
+      "sha256": "2fae3188ae382a585409121ce3de8771083bde7eaf861e0b91eae81ce33e5c77",
+      "crc32": "6cb110b4"
+    },
+    {
+      "path": "extension/preview.html",
+      "bytes": 3334,
+      "sha256": "b1b4d2ccd7151448013ba6db4c49394fe62073f9e06152768088ce4b125dedde",
+      "crc32": "e841406d"
+    },
+    {
+      "path": "extension/preview.js",
+      "bytes": 2257,
+      "sha256": "ee4adbf9c9261f931d06f39c5e495f9c92396f05947c01ddbebec1b387cf2f49",
+      "crc32": "79cc415a"
+    },
+    {
+      "path": "extension/pro.html",
+      "bytes": 3358,
+      "sha256": "a291470426c6aba5d91e10aac138a1884cda540e70bdf1ded4eea7f2f31c0589",
+      "crc32": "11d1f28a"
+    },
+    {
+      "path": "extension/release.js",
+      "bytes": 182,
+      "sha256": "e17bc710a1dcf746814b05cd3de594d76705e30446d6162df780ebf791c68cad",
+      "crc32": "8ab21f27"
+    },
+    {
+      "path": "extension/request-code.js",
+      "bytes": 1462,
+      "sha256": "196d8a26b679f4a652c5639f3b821f69eb5d632b3b27d86e6e2e824bb1dc8be8",
+      "crc32": "9198050b"
+    },
+    {
+      "path": "extension/request-id.js",
+      "bytes": 1885,
+      "sha256": "528df09c5f82b2d0a45b0fcd4c3f12e7ad901fbcd26b1ffff0d98bc74271593a",
+      "crc32": "ba63d70b"
+    },
+    {
+      "path": "extension/sessions.js",
+      "bytes": 5627,
+      "sha256": "b843a294e63ac91e9b4099c2556cfc5ff9ebf577c9aaa5eeee1d133ac4438039",
+      "crc32": "44814e72"
+    },
+    {
+      "path": "extension/startup-runtime.js",
+      "bytes": 1496,
+      "sha256": "c39fca103932c73cdbecc30c3a9afdc48f1e71d4ee2682b0f6f4363c2173b602",
+      "crc32": "cd26af54"
+    },
+    {
+      "path": "extension/ui.css",
+      "bytes": 8560,
+      "sha256": "69ff34d771b76e0a744e6801a54725cf4d5e573756c4a8c71b8daa8f23f06b74",
+      "crc32": "3a16d282"
+    },
+    {
+      "path": "extension/ui.js",
+      "bytes": 3934,
+      "sha256": "abb71c7b39b31a9ad47743dd7c691e63383fa2e78578bb160ea58c9a9fffd7cc",
+      "crc32": "15cc1936"
+    },
+    {
+      "path": "extension/workspace.html",
+      "bytes": 22496,
+      "sha256": "2fe2a4cc792c8d05b77c45c28caf15b7122da013d42378c2aa93f27c11cae8f9",
+      "crc32": "f45dcb22"
+    },
+    {
+      "path": "extension/workspace.js",
+      "bytes": 18676,
+      "sha256": "dfaebe4a3f12e3f507aaea31add9d88110d6ea953863b472238b2f03dc640d61",
+      "crc32": "591f963d"
+    },
+    {
+      "path": "Начните здесь.html",
+      "bytes": 8066,
+      "sha256": "15168902d5092f6801a04a08b5e261352fe1d58bb01888f55de60de157561444",
+      "crc32": "827c4503"
+    },
+    {
+      "path": "ПРОЧИТАЙТЕ.txt",
+      "bytes": 1318,
+      "sha256": "a2c99e280bc12078bef9f528b15f530657af55a0b2148bb0cbe0b1f03b70ba11",
+      "crc32": "d7de6d48"
+    }
+  ]
+}

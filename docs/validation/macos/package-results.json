@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "version": "0.14.0",
+  "extensionIDKeyPreserved": true,
+  "nativeMacAcceptance": "pending",
+  "products": [
+    {
+      "file": "Claude-mini-macOS-v0.14.0-Apple-Silicon.zip",
+      "bytes": 195002516,
+      "sha256": "f67e64d629bfe6b84a5a5b8f0d44aa2ae4216e11831d7a93b3cbf8b4a14651d5",
+      "platform": "mac-arm64",
+      "files": 47,
+      "zipCRC": true,
+      "fileHashes": true,
+      "unixExecutableBits": true
+    },
+    {
+      "file": "Claude-mini-macOS-v0.14.0-Intel.zip",
+      "bytes": 205476334,
+      "sha256": "75d0486786441dfcc74b03c6ad78989573aba8b1576984604170c25b43931305",
+      "platform": "mac-x64",
+      "files": 47,
+      "zipCRC": true,
+      "fileHashes": true,
+      "unixExecutableBits": true
+    }
+  ]
+}

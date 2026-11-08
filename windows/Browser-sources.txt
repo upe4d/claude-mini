@@ -1,0 +1,13 @@
+Chrome 156.0.8078.47
+https://storage.googleapis.com/chrome-for-testing-public/156.0.8078.47/win64/chrome-win64.zip
+SHA-256: a4e0d57245e167e98a9d465af1e3774d2b4ec9f04e483d19bcd97a6f63cf46dd
+
+Edge 156.0.4314.50
+https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/43a4cadd-6bb0-4325-83ba-ce03006a0b00/MicrosoftEdgeEnterpriseX64.msi
+SHA-256: cd17adf14736b6eaa04076e6f9658a35f74562e69d474c34b667f5515231791b
+
+Brave 1.98.60
+https://github.com/brave/brave-browser/releases/download/v1.98.60/brave-v1.98.60-win32-x64.zip
+SHA-256: 2c937c91f5061fb1034097c932112b06f429d5bdd08bc5e32921b88609d011e7
+
+Original distribution notices and licenses remain included in the browser archives.

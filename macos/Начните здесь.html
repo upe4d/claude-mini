@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Claude mini для Mac · Начните здесь</title>
+  <link rel="stylesheet" href="app/guide.css">
+  <script defer src="app/guide.js"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="#install/1"><span class="mark">m</span><span>Claude mini<small>Бесплатная версия для macOS · 0.14.0</small></span></a><span class="edition">Claude + Gemini</span></header>
+<main>
+  <div class="intro"><p class="eyebrow">ВАШ ОТДЕЛЬНЫЙ БРАУЗЕР ДЛЯ НЕЙРОСЕТЕЙ</p><h1>Открыли. Настроили.<br>Можно работать.</h1><p>В комплекте браузер и расширение. Вы выбираете сервис, сохраняете настройки и скачиваете открытый чат в файл.</p></div>
+  <nav class="steps" aria-label="Шаги установки">
+    <button type="button" data-step="0">1 <span>Распакуйте</span></button>
+    <button type="button" data-step="1">2 <span>Запустите</span></button>
+    <button type="button" data-step="2">3 <span>Настройте</span></button>
+    <button type="button" data-step="3">4 <span>Работайте</span></button>
+  </nav>
+  <section class="card" data-panel="0">
+    <p class="eyebrow">ШАГ 1 ИЗ 4</p><h2>Распакуйте всю папку.</h2>
+    <div class="two"><div><p>Дважды нажмите на скачанный ZIP. Перенесите полученную папку в <strong>«Документы»</strong> или другое постоянное место.</p><p>Не запускайте файлы прямо из архива. В папке должны остаться <strong>app</strong>, <strong>extension</strong> и <strong>payload</strong>.</p></div><div class="note"><strong>Какой архив выбрать?</strong><p><b>Apple Silicon</b> — Mac с процессором M1, M2, M3 и новее.<br><b>Intel</b> — Mac с процессором Intel.</p><p>Посмотреть: меню Apple → «Об этом Mac». Нужна macOS 13 или новее.</p></div></div>
+    <button class="primary next" type="button">Папка распакована →</button>
+  </section>
+  <section class="card" data-panel="1" hidden>
+    <p class="eyebrow">ШАГ 2 ИЗ 4</p><h2>Дважды нажмите «Запустить.command».</h2>
+    <div class="two"><div><p>Откроется окно Терминала. При первом запуске оно проверит и распакует браузер. <strong>Дождитесь окна браузера.</strong></p><p>Если браузер спросит о новой стартовой странице, нажмите <strong>Keep it / «Оставить»</strong>.</p><p>Нажмите значок пазла у адресной строки. Найдите <strong>Claude mini</strong> и закрепите его кнопкой с булавкой.</p></div><div class="note"><strong>Где рабочее место?</strong><p>После загрузки расширения откройте новую вкладку: <kbd>⌘</kbd> + <kbd>T</kbd>. Должно появиться рабочее место Claude mini.</p><p>В нём доступны Claude и Gemini. Работайте дальше из этого окна.</p></div></div>
+    <details><summary>Расширение не появилось: установить вручную</summary><ol><li>Скопируйте адрес и откройте его в адресной строке этого браузера: <button class="copy" type="button" data-copy="chrome://extensions/">Скопировать chrome://extensions/</button></li><li>Включите <strong>Developer mode / «Режим разработчика»</strong> справа сверху.</li><li>Нажмите <strong>Load unpacked / «Загрузить распакованное расширение»</strong>.</li><li>Выберите папку <strong>extension</strong> внутри распакованного комплекта. Закрепите значок и нажмите <kbd>⌘</kbd> + <kbd>T</kbd>.</li></ol><p>Этот шаг нужен только если автоматическая загрузка расширения не сработала.</p></details>
+    <div class="actions"><button class="secondary previous" type="button">← Назад</button><button class="primary next" type="button">Рабочее место открылось →</button></div>
+  </section>
+  <section class="card" data-panel="2" hidden>
+    <p class="eyebrow">ШАГ 3 ИЗ 4</p><h2>Выберите сервис и сохраните настройки.</h2>
+    <div class="two"><div><ol><li>В рабочем месте выберите <strong>Claude</strong> или <strong>Gemini</strong>.</li><li>Выберите язык сайта, часовой пояс и количество логических процессоров.</li><li>Нажмите <strong>«Сохранить»</strong>. Дождитесь явного подтверждения сохранения.</li><li>Ниже включите <strong>ограничение WebRTC</strong>, если хотите запретить UDP-соединения без прокси в этом профиле.</li></ol></div><div class="note"><strong>Что вы увидите</strong><p>Выбранные параметры — это ваш сохранённый выбор. Фактические параметры страницы смотрите через значок расширения уже на сайте.</p><p>WebRTC может влиять на звонки. При проблемах со звуком или видео временно снимите ограничение.</p></div></div>
+    <p class="hint">Если браузер покажет полосу «started debugging this browser», это расширение применяет выбранные настройки к вкладке. Нажатие Cancel / «Отмена» отключает это управление.</p>
+    <div class="actions"><button class="secondary previous" type="button">← Назад</button><button class="primary next" type="button">Настройки сохранены →</button></div>
+  </section>
+  <section class="card" data-panel="3" hidden>
+    <p class="eyebrow">ШАГ 4 ИЗ 4</p><h2>Откройте нейросеть из рабочего места.</h2>
+    <div class="two"><div><p>Нажмите кнопку открытия выбранного сервиса. Вход в аккаунт выполняется на самом сайте. Программа не выдаёт аккаунт или подписку.</p><p>На сайте нажмите значок <strong>Claude mini</strong>. Проверьте, какие параметры видит открытая вкладка. Красное сообщение об изменении означает, что значения отличаются от сохранённой точки сравнения.</p><p>Следующий запуск: <strong>«Запустить.command» → рабочее место → нужный сервис.</strong></p></div><div class="note"><strong>Как скачать чат</strong><ol><li>Откройте нужный чат и дождитесь ответа.</li><li>Значок расширения → <strong>«Сохранить открытый чат»</strong>.</li><li>Проверьте предпросмотр и выберите <strong>TXT, MD, JSON или PDF</strong>.</li></ol><p>Сохраняются загруженные на странице сообщения. Вложения и скрытые ветки отдельно не скачиваются.</p></div></div>
+    <div class="actions"><button class="secondary previous" type="button">← Назад</button><button class="primary" id="workspace-copy" type="button">Скопировать адрес рабочего места</button></div>
+    <p class="hint" id="workspace-instruction">В отдельном браузере: ⌘L → ⌘V → Enter. Или просто откройте новую вкладку: ⌘T.</p>
+  </section>
+  <p class="status" id="status" role="status" aria-live="polite"></p>
+  <div class="extras">
+    <details class="card compact"><summary>Если не открылось</summary><p><strong>Mac не разрешает запустить файл?</strong> Откройте «Системные настройки» → «Конфиденциальность и безопасность». Если показана блокировка именно этого файла, проверьте имя и используйте штатную кнопку «Всё равно открыть». Общую защиту macOS отключать не нужно.</p><p><strong>Нет разрешения на исполнение?</strong> Откройте Терминал, наберите <code>/bin/bash </code> с пробелом, перетащите в это окно файл <strong>«Запустить.command»</strong> и нажмите Enter. Затем отправьте разработчику описание ошибки.</p><p><strong>Пустая вкладка при запуске?</strong> Дождитесь загрузки расширения и нажмите ⌘T. Если не помогло, выполните ручную установку из шага 2.</p><p><strong>Нужен отчёт?</strong> Дважды нажмите <strong>«Диагностика.command»</strong>. Передайте выбранный в Finder TXT и снимок ошибки. <b>Папку Data/Profile не отправляйте.</b></p></details>
+    <details class="card compact"><summary>Что находится на Mac</summary><p><strong>Data/Browser</strong> — отдельный браузер. <strong>Data/Profile</strong> — настройки и входы этого браузера. <strong>Data/Logs</strong> — сообщения запуска.</p><p>Для обычных сайтов ваш установленный браузер остаётся самостоятельным. Входы macOS могут зависеть от Связки ключей: перенос папки на другой Mac не гарантирует перенос авторизации.</p><p>Это Chrome for Testing из официального архива Google. Он не обновляется автоматически. Обновления браузера нужно получать с новым выпуском программы.</p><p>Смена параметров относится к управляемой вкладке. Системные часы, физическое оборудование и IP эта программа не меняет. Полное совпадение параметров во всех типах worker не обещается.</p></details>
+  </div>
+</main>
+<footer><span>Бесплатная версия · Без исследовательских инструментов Pro</span><a href="https://cenpad.ru/?ref=02525848c9467138dab152721c9bd0d2&amp;screen=home&amp;utm_source=referral&amp;utm_medium=link&amp;utm_campaign=extension_claude" target="_blank" rel="noopener noreferrer">Ценопад — нейросети по снижающимся ценам ↗<small>Реферальная ссылка проекта</small></a></footer>
+</body></html>

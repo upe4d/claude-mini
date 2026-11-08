@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "Claude nested messages, roles, markdown, hidden branch and URL stripping",
+    "Gemini multi-turn order, explicit roles, controls excluded, safe links and clean URL",
+    "MD, TXT and JSON preserve Gemini identity and incomplete-history flag",
+    "OAuth origin, service mismatch after navigation and unrecognized DOM fail explicitly"
+  ],
+  "network": "All page requests intercepted; no real service connection",
+  "limitations": [
+    "Selectors tested against fixtures. Current authenticated Gemini interface is not verified.",
+    "This test runs Chromium on Windows; it is not macOS execution."
+  ]
+}

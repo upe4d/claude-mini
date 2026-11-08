@@ -1,0 +1,25 @@
+ИСТОЧНИКИ КОМПОНЕНТОВ И ДОКУМЕНТАЦИИ
+
+База бесплатного расширения: Claude mini Browser 0.13.1.
+https://cenpad.ru/claude-mini/downloads/Claude-mini-Browser-v0.13.1.zip
+Браузер: неизменённый оригинальный Chrome for Testing с закреплённой версией.
+Точная версия, официальный источник и контрольные суммы полученных по HTTPS архивов находятся в app/runtime-lock.json.
+SHA-256 вычислены при сборке, это не опубликованные Google подписи файлов.
+
+Официальный каталог платформ и загрузок:
+https://googlechromelabs.github.io/chrome-for-testing/
+https://github.com/GoogleChromeLabs/chrome-for-testing
+
+Отдельный каталог пользовательского профиля Chromium:
+https://chromium.googlesource.com/chromium/src/+/main/docs/user_data_dir.md
+
+Поддержка загрузки распакованного расширения в Chrome for Testing:
+https://groups.google.com/a/chromium.org/g/chromium-extensions/c/1-g8EFx2BBY/m/my-groups
+
+Минимальная поддерживаемая macOS:
+https://support.google.com/chrome/a/answer/7100626
+
+Штатное подтверждение открытия программы в macOS:
+https://support.apple.com/en-us/102445
+
+Экспорт работает с DOM открытого чата по нажатию. Проверка адаптера Gemini на локальном образце не подтверждает полное соответствие текущей авторизованной странице Gemini.

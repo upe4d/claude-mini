@@ -1,0 +1,144 @@
+{
+  "kind": "Windows CfT integration of macOS extension; local fixtures only",
+  "at": "2026-11-07T17:15:13.729Z",
+  "checks": [
+    {
+      "name": "Offline wizard single panel and no overflow 360"
+    },
+    {
+      "name": "Offline wizard single panel and no overflow 390"
+    },
+    {
+      "name": "Offline wizard single panel and no overflow 768"
+    },
+    {
+      "name": "Offline wizard single panel and no overflow 1440"
+    },
+    {
+      "name": "Offline wizard next/back"
+    },
+    {
+      "name": "Offline wizard includes Keep it and manual extension setup"
+    },
+    {
+      "name": "Service worker initialized settings and WebRTC restriction"
+    },
+    {
+      "name": "Actual first-run wizard pin/settings/WebRTC/finish opens workspace"
+    },
+    {
+      "name": "Workspace contains Claude and Gemini"
+    },
+    {
+      "name": "Workspace no overflow 360"
+    },
+    {
+      "name": "Workspace no overflow 390"
+    },
+    {
+      "name": "Workspace no overflow 768"
+    },
+    {
+      "name": "Workspace no overflow 1440"
+    },
+    {
+      "name": "Save feedback and persisted service/timezone/language/CPU"
+    },
+    {
+      "name": "Strict service origins exclude OAuth/host lookalikes/HTTP/ports/userinfo"
+    },
+    {
+      "name": "Launch gemini uses exact expected URL",
+      "url": "https://gemini.google.com/app"
+    },
+    {
+      "name": "Configured gemini fixture reports selected values",
+      "snapshot": {
+        "zone": "UTC",
+        "language": "en-GB",
+        "cores": 4
+      }
+    },
+    {
+      "name": "Actual toolbar popup reads gemini tab measurements"
+    },
+    {
+      "name": "Preview labels and TXT/MD/JSON downloads + PDF print request gemini"
+    },
+    {
+      "name": "Configured gemini tab detaches on local OAuth navigation"
+    },
+    {
+      "name": "Launch claude uses exact expected URL",
+      "url": "https://claude.ai/"
+    },
+    {
+      "name": "Configured claude fixture reports selected values",
+      "snapshot": {
+        "zone": "UTC",
+        "language": "en-GB",
+        "cores": 4
+      }
+    },
+    {
+      "name": "Actual toolbar popup reads claude tab measurements"
+    },
+    {
+      "name": "Preview labels and TXT/MD/JSON downloads + PDF print request claude"
+    },
+    {
+      "name": "Configured claude tab detaches on local OAuth navigation"
+    },
+    {
+      "name": "Own profile restart preserves saved settings"
+    }
+  ],
+  "errors": [],
+  "browserVersion": "156.0.8078.47",
+  "passed": true,
+  "sourceUnchanged": true,
+  "macOSNativeVerified": false,
+  "realServicesVerified": false,
+  "sourceHashes": {
+    "background.js": "bf0fa554c96f55ad23d0a134362de4894bbd5eebec511ae623dd206d3b5b3d18",
+    "capture.js": "3895f950db9e823b0d74a27d00e9b7fb36d8693fc7906c90f2bb0967cc3b244d",
+    "chat-formats.js": "c6054c0d4886b5204401eb4425da8ee0ef860d8ac03d14027941b9296025fcbb",
+    "config.js": "48370e420a9a640dde1fb8b94a615387db865056046e7b1ffabaca1731dff4ad",
+    "connection-runtime.js": "c10d505e69d7669d95eeff0e29ee8e98e42721b4a30767bd764436a82c761aad",
+    "current.js": "5d224abfb8025e51310a6ce7f08951c10a7f6279287a8773530facb77f31dcfa",
+    "export.js": "4bea3321ae7de4c83d46a0c39af82ce68803312031da90a6ea245d51d18fa044",
+    "guide.html": "0a4fe4b384349bbc7725920a5b1446d51ac822a4650ff2fd55b301d046c02ab6",
+    "guide.js": "1f64b252eee08f6f0035db4c0c0c19bed83583b7370b4197ec5cda71b1c4b8a9",
+    "icons/icon-128.png": "513632f12cbb6923629618c53aee9f98d647034a18e06510390b2eae43b890df",
+    "icons/icon-16.png": "d23123c19b01ec254cb152c933bb02465fce4db0f35da450e5712e813a873889",
+    "icons/icon-32.png": "c5b1b8b5caa31719566f27a5007b762aacbbd14fe3b8ad3be52f462e33b8142e",
+    "icons/icon-48.png": "dada2fecc43ed19ef9af7e0be1482bbc732b6b356e52f3b923cadecaac225fe4",
+    "install-info.js": "dc7c11109b67e5ba7514bcd24497b53f216e96a8cf2202ed6a00d92f5a276a8e",
+    "locale-runtime.js": "fa6803d1135933e71234f4599e03ee047759f441741b54c1ad66b973d880b2a3",
+    "mac-ui.css": "9d361155d13f00a53e9ddebdad6db6fa90c7d0e75eff801a4f6fd13badcf7540",
+    "manifest.json": "1d1fff6c3bbccc7a493477ae338d481796f3dd4c729c13e8d7fc30c271b9a661",
+    "onboarding.html": "2ee0ab47a11b787b4880b8e905adadd222f3dc43b631a49f82a625b2701cfbbc",
+    "onboarding.js": "901e5ba486ccdf4167ba4d47f0359fe3f52e7347553209de1c83772295e60b3f",
+    "popup.html": "b3f80f0f1334dc818a80b49788ca287c76681a88efb745c110ca7a4be421aeb3",
+    "popup.js": "363ab106b84d4589cd362a2290f97dd16eabd17704f46ef8a0ece8c4cd27e0fa",
+    "preset.js": "2fae3188ae382a585409121ce3de8771083bde7eaf861e0b91eae81ce33e5c77",
+    "preview.html": "cbb0ab8dd217bd78d8c80f43a37fcba045d99d5cd8fae2807776eb828e4e8181",
+    "preview.js": "c856c59a6936f23f823ca81e27dc7603d9d26ec8df5bf5e3acb68242d451c3b7",
+    "release.js": "6be2c9e56222108f7f9647ddcbf0b828a29029892ad9e6efcc1d2a5044ffeda8",
+    "services.js": "0ae08e9d480ae74256c36039dde9fd86f7abdf76fa15a215a2f9b4bb9f206f85",
+    "sessions.js": "ffc4261589fa56f90d03b40089844dad2c7265e500fc527f1ea97b581a50cb4c",
+    "startup-runtime.js": "9db47d89dfaea0ef17ca60bb523b1442d80a8e875bbecafa49f9aa28b152fe74",
+    "ui.css": "69ff34d771b76e0a744e6801a54725cf4d5e573756c4a8c71b8daa8f23f06b74",
+    "ui.js": "abb71c7b39b31a9ad47743dd7c691e63383fa2e78578bb160ea58c9a9fffd7cc",
+    "workspace.html": "9471edc1148a57dfb92d8ab755833fe43d5996b3538e77cc51e98ad9836fdb70",
+    "workspace.js": "b788659b0cb93c2f779aa2a74f9d937ae7329a77419d83ae0530175546e7b149"
+  },
+  "publicationScope": "Owner paths, raw targets and temporary profiles removed; source hashes cover only included public extension files. No test was reclassified as native macOS validation.",
+  "excludedUnusedSourceFiles": [
+    "guide.css",
+    "portable-guide.js",
+    "pro.html",
+    "request-code.js",
+    "request-id.js"
+  ]
+}

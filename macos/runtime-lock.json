@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "source": "https://googlechromelabs.github.io/chrome-for-testing/156.0.8078.47.json",
+  "channel": "Compatible pinned",
+  "version": "156.0.8078.47",
+  "revision": "1706539",
+  "currentStableSource": "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json",
+  "currentStableVersion": "157.0.8103.38",
+  "selection": "Existing extension compatibility checked on Windows fixtures; native Mac pending",
+  "sha256Provenance": "Calculated locally from complete HTTPS downloads; not an upstream published signature",
+  "runtimeKind": "Chrome for Testing",
+  "autoUpdates": false,
+  "platforms": {
+    "mac-arm64": {
+      "platform": "mac-arm64",
+      "url": "https://storage.googleapis.com/chrome-for-testing-public/156.0.8078.47/mac-arm64/chrome-mac-arm64.zip",
+      "filename": "chrome-mac-arm64.zip",
+      "cachePath": "cache/156.0.8078.47/chrome-mac-arm64.zip",
+      "sha256": "ad7f2b49a4dc679af286b1b1b386670d93ca7868079f69012d21ba0ac8293df3",
+      "bytes": 194932023,
+      "version": "156.0.8078.47",
+      "minimumMacOS": "13.0",
+      "bundlePath": "chrome-mac-arm64/Google Chrome for Testing.app",
+      "executable": "Google Chrome for Testing",
+      "machoCPU": "0x100000c",
+      "symlinks": 5,
+      "validation": {
+        "zipCRC": true,
+        "machOArchitecture": true,
+        "signatureOnMac": "pending"
+      }
+    },
+    "mac-x64": {
+      "platform": "mac-x64",
+      "url": "https://storage.googleapis.com/chrome-for-testing-public/156.0.8078.47/mac-x64/chrome-mac-x64.zip",
+      "filename": "chrome-mac-x64.zip",
+      "cachePath": "cache/156.0.8078.47/chrome-mac-x64.zip",
+      "sha256": "5a38b8e3d621514fff0775dcae678a152ce378890188c88eef79fc97aa59fccd",
+      "bytes": 205405847,
+      "version": "156.0.8078.47",
+      "minimumMacOS": "13.0",
+      "bundlePath": "chrome-mac-x64/Google Chrome for Testing.app",
+      "executable": "Google Chrome for Testing",
+      "machoCPU": "0x1000007",
+      "symlinks": 5,
+      "validation": {
+        "zipCRC": true,
+        "machOArchitecture": true,
+        "signatureOnMac": "pending"
+      }
+    }
+  },
+  "currentStableSourceTimestamp": "2026-11-07T10:10:51.161Z"
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "Active Claude tab CPU4 compared to its own session while global Gemini choice is CPU8",
+    "Existing tab configuration takes precedence over a later same-service launch",
+    "Gemini tab uses its own session configuration",
+    "Unmanaged tab may compare only with previous launch of the same service",
+    "No Claude reference returns unknown instead of matching Gemini defaults",
+    "Current settings are fallback only when the service matches",
+    "OAuth origin cannot be compared",
+    "Incomplete cached entries do not fabricate defaults or a green match"
+  ]
+}

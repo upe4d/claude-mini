@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Claude mini: Browser",
+  "version": "0.14.0",
+  "minimum_chrome_version": "125",
+  "description": "Бесплатное рабочее место для Claude и Gemini: настройки вкладки, WebRTC и сохранение открытого чата. macOS.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "privacy",
+    "debugger"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Claude mini: Claude и Gemini",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "options_ui": {
+    "page": "workspace.html",
+    "open_in_tab": true
+  },
+  "chrome_url_overrides": {
+    "newtab": "workspace.html"
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; base-uri 'none'; connect-src 'self' https://www.cloudflare.com"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxBoh5qjSn7elqXNerxp8peoBvN22m8QyQihjuOiPzssg1XSviFw3UlZNql36hqhURBCCm+8auNsXF3fmw+eYAFDnkFsJUnA/jqRUGxamSQw9NS+k3iCHBxXJi+nSB06iVb/cc58pIOhECUnqzUPR564Yv+VAFlFwkfn8X55gU5/C6S++n+bWImAtfiXpdX4dGyQd4zQlZxc10hasa9oYerpuL53rsRPIebeqIEcXfS2e1vrWnYdVMSuSDj0kkpaQv6fLdMBconh52RnBjdg8LG9iCx1Vla5knKz2MXJxIGyyiifOexJQvqTRx1Bvo04jR4cDzmNETc1zS5/FeNckVQIDAQAB",
+  "host_permissions": [
+    "https://www.cloudflare.com/*"
+  ]
+}
