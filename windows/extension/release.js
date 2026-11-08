@@ -1,8 +1,3 @@
-window.ProductRelease={
-  "version": "0.13.1",
-  "release": "92BB6383",
-  "product": "Claude mini Pro",
-  "edition": "community",
-  "date": "2026-10-26",
-  "priceRUB": 1500
-};
+"use strict";
+// Метаданные бесплатной Windows-сборки, без исследовательских модулей.
+const MiniRelease = Object.freeze({product:'Claude mini Browser',edition:'free',platform:'windows',version:'0.14.1',services:['claude','gemini'],research:false,price:0,channel:'prerelease'});

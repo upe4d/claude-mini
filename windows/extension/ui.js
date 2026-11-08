@@ -16,7 +16,7 @@ const uiErrors = {
   LAUNCH_FAILED:['Не удалось применить настройки. Закройте DevTools этой вкладки или выберите настройки браузера и повторите запуск.','Settings could not be applied. Close DevTools or choose browser defaults and try again.'],
   WEBRTC_CONFLICT:['Настройкой WebRTC управляет другое расширение или организация.','Another extension or organization controls WebRTC.'],
   WEBRTC_RELEASE_FAILED:['Браузер не снял наше ограничение. Повторите действие.','The browser did not release our setting. Try again.'],
-  RESET_INCOMPLETE:['Не все вкладки удалось перезагрузить. Закройте вкладки с настройками и откройте Claude заново.','Some tabs could not be reloaded. Close configured tabs and open Claude again.'],
+  RESET_INCOMPLETE:['Не все вкладки удалось перезагрузить. Закройте вкладки с настройками и заново откройте нужный сервис из рабочего места.','Some tabs could not be reloaded. Close configured tabs and reopen the selected service from the workspace.'],
   NO_BACKUP:['Ещё не было импорта. Предыдущий выбор отсутствует.','No settings have been imported yet. There is no previous selection.'],
 };
 function errorText(error) { const pair=uiErrors[error.message];return pair?text(...pair):text('Не получилось выполнить действие. Перезагрузите расширение и повторите.','Action failed. Reload the extension and try again.'); }

@@ -1,0 +1,18 @@
+{
+  "version": "0.14.1",
+  "edition": "free",
+  "platform": "windows",
+  "channel": "prerelease",
+  "services": [
+    "claude",
+    "gemini"
+  ],
+  "browserCatalog": "app/runtimes.json",
+  "cpuSelection": true,
+  "proTools": false,
+  "realServiceAccountValidation": "pending",
+  "sourceBase": {
+    "windows": "0.13.1",
+    "commonExtension": "0.14.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scope": "Real Chrome on Windows; local website fixtures only",
+  "checks": [
+    "No overflow; main/beta/Mac links; four beta steps 360",
+    "No overflow; main/beta/Mac links; four beta steps 390",
+    "Mobile menu opens and closes with Escape",
+    "No overflow; main/beta/Mac links; four beta steps 768",
+    "No overflow; main/beta/Mac links; four beta steps 1440",
+    "Existing motion initializer runs on the patched page"
+  ],
+  "errors": []
+}

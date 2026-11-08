@@ -12,6 +12,11 @@ const BrowserSessions = {
     if (!entry?.active) return;
     const target = {tabId: source.tabId, sessionId: params.sessionId};
     try {
+      // Параметры не распространяются на сторонние iframe, включая вход Google.
+      const childURL=params.targetInfo?.url||'';
+      let scopedURL=childURL;
+      try{if(childURL.startsWith('blob:'))scopedURL=new URL(childURL).origin;}catch{return;}
+      if(MiniServices.fromUrl(scopedURL)?.id!==entry.service)return;
       if (params.targetInfo.type === 'iframe') {
         if (entry.agent) TabLocale.agents.set(source.tabId, entry.agent);
         await this.children(target);
@@ -46,7 +51,7 @@ const BrowserSessions = {
       if (settings.timezone) await chrome.debugger.sendCommand(target, 'Emulation.setTimezoneOverride', {timezoneId: settings.timezone});
       if (settings.cores) await chrome.debugger.sendCommand(target,'Emulation.setHardwareConcurrencyOverride',{hardwareConcurrency:settings.cores});
       await chrome.storage.session.set({[this.key(tabId)]: {
-        tabId, active:true, timezone:settings.timezone, locale:settings.locale,cores:settings.cores||0,
+        tabId, active:true, service:settings.service, timezone:settings.timezone, locale:settings.locale,cores:settings.cores||0,
         agent:TabLocale.agents.get(tabId) || null, openedAt:new Date().toISOString(), issue:null,
       }});
       await this.children(target);
@@ -57,11 +62,11 @@ const BrowserSessions = {
     }
   },
   async launch(settings) {
-    if (!settings.timezone && !settings.locale && !settings.cores) return chrome.tabs.create({url:Product.target});
+    if (!settings.timezone && !settings.locale && !settings.cores) return chrome.tabs.create({url:Product.target(settings)});
     const tab = await chrome.tabs.create({url:'about:blank', active:false});
     try {
       await this.apply(tab.id, settings);
-      return await chrome.tabs.update(tab.id, {url:Product.target, active:true});
+      return await chrome.tabs.update(tab.id, {url:Product.target(settings), active:true});
     } catch (error) {
       await chrome.debugger.detach({tabId:tab.id}).catch(() => {});
       await chrome.tabs.remove(tab.id).catch(() => {});
@@ -97,3 +102,14 @@ chrome.debugger.onDetach.addListener(source => {
   }).catch(console.error);
 });
 chrome.tabs.onRemoved.addListener(id => chrome.storage.session.remove(BrowserSessions.key(id)).catch(console.error));
+
+chrome.debugger.onEvent.addListener((source,method,params)=>{
+  if(method!=='Page.frameNavigated'||source.sessionId||params.frame?.parentId)return;
+  const url=params.frame?.url;if(!url||url==='about:blank')return;
+  chrome.storage.session.get(BrowserSessions.key(source.tabId)).then(async saved=>{
+    const entry=saved[BrowserSessions.key(source.tabId)];if(!entry?.active)return;
+    if(MiniServices.fromUrl(url)?.id===entry.service)return;
+    await chrome.debugger.detach({tabId:source.tabId}).catch(()=>{});
+    await chrome.storage.session.set({[BrowserSessions.key(source.tabId)]:{...entry,active:false,issue:'LEFT_SERVICE'}});
+  }).catch(console.error);
+});

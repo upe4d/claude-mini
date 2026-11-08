@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "edition": "free",
+  "platform": "Windows",
+  "version": "0.14.1",
+  "preparedAt": "2026-11-08",
+  "status": "prerelease_real_gemini_account_validation_pending",
+  "services": [
+    "Claude",
+    "Gemini"
+  ],
+  "changes": [
+    "Выбор Claude/Gemini в общем рабочем месте Windows",
+    "Три прежних браузера и раздельные профили",
+    "Четыре экрана подготовки",
+    "Язык, пояс, CPU, WebRTC и экспорт остаются бесплатными"
+  ],
+  "stableWindows": {
+    "version": "0.13.1",
+    "services": [
+      "Claude"
+    ],
+    "replaced": false
+  },
+  "macOS": {
+    "version": "0.14.0",
+    "changed": false
+  },
+  "repository": "https://github.com/upe4d/claude-mini"
+}

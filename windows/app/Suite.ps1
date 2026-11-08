@@ -38,7 +38,7 @@ function Prepare-Suite([string]$Parent,[string[]]$Browsers,[string]$Locale='en-U
         if($id-notin$installed){$installed+=,$id}
         # Commit each successful engine so retrying after a later failure is safe.
         $chosen=if($Default-in$installed){$Default}else{$installed[0]}
-        Write-JsonFile (Join-Path $root 'suite.json') @{schema=1;version='0.13.1';installed=$installed;default=$chosen;paths=$paths}
+        Write-JsonFile (Join-Path $root 'suite.json') @{schema=1;version='0.14.1';installed=$installed;default=$chosen;paths=$paths}
     }
     Copy-ProgramFiles $root ($suiteExists-or$legacyExists)
     if($paths.ContainsKey('brave')-and$paths['brave']-eq'.'){

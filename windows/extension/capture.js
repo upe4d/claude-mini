@@ -1,6 +1,8 @@
 "use strict";
-function captureClaudeChat(){
- if(location.hostname!=='claude.ai'||!location.pathname.startsWith('/chat/'))throw Error('Откройте нужный чат Claude, затем повторите экспорт.');
+// Функция самодостаточна: Chrome сериализует её в изолированный контекст вкладки.
+function captureClaudeChat(expectedService){
+ const service=location.protocol==='https:'&&location.hostname==='claude.ai'&&location.pathname.startsWith('/chat/')?{id:'claude',label:'Claude'}:location.protocol==='https:'&&location.hostname==='gemini.google.com'&&/^\/app(?:\/|$)/.test(location.pathname)?{id:'gemini',label:'Gemini'}:null;
+ if(!service||service.id!==expectedService)throw Error('Откройте нужный чат Claude или Gemini, затем повторите экспорт.');
  const mdCode=[],plainCode=[];
  function finish(text,parts){return text.replace(/\n[ \t]*\n(?:[ \t]*\n)+/g,'\n\n').trim().replace(/\uE000(\d+)\uE001/g,(_,i)=>parts[Number(i)]);}
  function md(node){
@@ -29,12 +31,20 @@ function captureClaudeChat(){
   const text=Array.from(node.childNodes).map(plain).join('');
   return ['p','div','section','li','ul','ol','blockquote','h1','h2','h3','h4','h5','h6'].includes(tag)?'\n\n'+text+'\n\n':text;
  }
- const selectors='[data-testid="user-message"],[data-testid="assistant-message"],.font-claude-response';
+ // Отдельные DOM-адаптеры сохраняют порядок ролей. Если сайт изменит разметку,
+ // экспорт завершается явной ошибкой вместо захвата всей страницы и меню.
+ const selectors=service.id==='claude'?'[data-testid="user-message"],[data-testid="assistant-message"],.font-claude-response':'user-query,model-response';
  const nodes=Array.from(document.querySelectorAll(selectors)).filter(n=>!n.parentElement?.closest(selectors));
- if(!nodes.length)throw Error('Сообщения не найдены. Возможно, интерфейс Claude изменился. Ничего не сохранено.');
- const messages=nodes.map(n=>({role:n.matches('[data-testid="user-message"]')?'user':'assistant',text:finish(plain(n),plainCode),markdown:finish(md(n),mdCode)})).filter(m=>m.text);
+ if(!nodes.length)throw Error('Сообщения не найдены. Возможно, интерфейс '+service.label+' изменился. Ничего не сохранено.');
+ if(nodes.length>1000)throw Error('Слишком много сообщений для одного экспорта.');
+ const messages=nodes.filter(n=>!n.closest('[hidden],[aria-hidden="true"]')).map(n=>{
+  const role=n.matches('[data-testid="user-message"],user-query')?'user':'assistant';
+  const content=service.id==='gemini'?(n.querySelector(role==='user'?'.query-text':'message-content,.model-response-text')||n):n;
+  return {role,text:finish(plain(content),plainCode),markdown:finish(md(content),mdCode)};
+ }).filter(m=>m.text);
+ if(messages.reduce((n,m)=>n+m.text.length+m.markdown.length,0)>5000000)throw Error('Чат слишком велик для одного экспорта.');
  if(!messages.length)throw Error('Найдены только пустые сообщения.');
  const warnings=['Сохранены только сообщения, присутствующие в DOM страницы. Полнота истории не подтверждена.','Вложения, изображения и содержимое артефактов отдельно не скачиваются.','Отредактированные варианты, скрытые рассуждения и ветки переписки могут отсутствовать.'];
- if(!messages.some(m=>m.role==='assistant'))warnings.push('Ответы Claude не найдены: проверьте предпросмотр.');
- return {schemaVersion:1,title:document.title,url:location.href,exportedAt:new Date().toISOString(),scope:'available_page_messages',complete:false,warnings,messages};
+ if(!messages.some(m=>m.role==='assistant'))warnings.push('Ответы '+service.label+' не найдены: проверьте предпросмотр.');
+ return {schemaVersion:1,service,title:document.title.replace(/[\r\n\u0000-\u001f]/g,' ').slice(0,500),url:location.origin+location.pathname,exportedAt:new Date().toISOString(),scope:'available_page_messages',complete:false,warnings,messages};
 }

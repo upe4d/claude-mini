@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
   "name": "Claude mini: Browser",
-  "version": "0.13.1",
+  "version": "0.14.1",
   "minimum_chrome_version": "125",
-  "description": "Рабочее место: язык, время, CPU, WebRTC, перенос настроек и экспорт. В составе самостоятельного portable-браузера.",
+  "description": "Бесплатное рабочее место для Claude и Gemini: настройки вкладки, WebRTC и сохранение чата. Windows.",
   "permissions": [
     "storage",
     "activeTab",
@@ -16,7 +16,7 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Claude mini В· Browser",
+    "default_title": "Claude mini: Claude и Gemini",
     "default_icon": {
       "16": "icons/icon-16.png",
       "32": "icons/icon-32.png"

@@ -10,9 +10,10 @@
 |---|---|---|
 | macOS 0.14.0, Apple Silicon | Claude и Gemini; Mac с M1/M2/M3 и новее | Предварительный выпуск для проверки на Mac |
 | macOS 0.14.0, Intel | Claude и Gemini; Mac с Intel 64 bit | Предварительный выпуск для проверки на Mac |
-| Windows 0.13.1 | Claude; отдельные Chrome, Edge и Brave | Сохранённая Windows-версия; обновление Gemini в неё ещё не перенесено |
+| Windows 0.14.1 | Claude и Gemini; отдельные Chrome, Edge и Brave | Предварительный выпуск для проверки Gemini |
+| Windows 0.13.1 | Claude; отдельные Chrome, Edge и Brave | Основной выпуск без Gemini; оставлен как запасной вариант |
 
-[Скачать для Mac Apple Silicon](https://github.com/upe4d/claude-mini/releases/download/v0.14.0-macos/Claude-mini-macOS-v0.14.0-Apple-Silicon.zip) · [Скачать для Mac Intel](https://github.com/upe4d/claude-mini/releases/download/v0.14.0-macos/Claude-mini-macOS-v0.14.0-Intel.zip) · [Скачать для Windows](https://github.com/upe4d/claude-mini/releases/download/v0.13.1-windows/Claude-mini-Browser-v0.13.1.zip)
+[Скачать для Mac Apple Silicon](https://github.com/upe4d/claude-mini/releases/download/v0.14.0-macos/Claude-mini-macOS-v0.14.0-Apple-Silicon.zip) · [Скачать для Mac Intel](https://github.com/upe4d/claude-mini/releases/download/v0.14.0-macos/Claude-mini-macOS-v0.14.0-Intel.zip) · [Windows 0.13.1 для Claude](https://github.com/upe4d/claude-mini/releases/download/v0.13.1-windows/Claude-mini-Browser-v0.13.1.zip) · [Windows 0.14.1 для теста Claude/Gemini](https://github.com/upe4d/claude-mini/releases/download/v0.14.1-windows/Claude-mini-Browser-v0.14.1.zip)
 
 ### Запуск на Mac
 
@@ -25,7 +26,16 @@
 
 ### Запуск на Windows
 
-В полном комплекте 0.13.1 распакуйте ZIP, откройте **Setup.cmd**, выберите браузеры и пройдите мастер. Для следующего запуска используйте созданный ярлык или **Launch.cmd**. Каждый выбранный браузер хранит отдельный профиль. Инструкция находится в [Windows-каталоге](windows/ПРОЧИТАЙТЕ.txt).
+Для обычной работы с Claude можно оставить **0.13.1**. Если хотите проверить Gemini, скачайте **предварительную 0.14.1**:
+
+1. Распакуйте полный ZIP в отдельную папку.
+2. Дважды нажмите **Setup.cmd** и выберите Chrome, Edge, Brave или несколько браузеров.
+3. Откройте подготовленный браузер. Если появится **Keep it / «Оставить»**, подтвердите. Закрепите значок расширения и пройдите четыре экрана мастера.
+4. В рабочем месте выберите **Claude или Gemini**, сохраните настройки и откройте сервис зелёной кнопкой. На сайте нажмите значок расширения → **«Обновить»**; затем попробуйте сохранить обычный чат.
+
+Для следующего запуска используйте созданный ярлык или **Launch.cmd**. У каждого браузера отдельный профиль. Проверку настоящего входа в Gemini и его текущего интерфейса должен выполнить тестировщик; наличие версии в Releases не означает, что реальная авторизация уже проверена разработчиком.
+
+[Короткая проверка Windows 0.14.1](docs/windows-0.14.1-test.md) · [Инструкция Windows](windows/ПРОЧИТАЙТЕ.txt)
 
 Папка `windows/` в Git содержит исходники и описание файлов, **без трёх больших браузерных архивов**. Сам по себе GitHub «Source code.zip» не является полным Windows-установщиком.
 
@@ -46,6 +56,10 @@
 
 **Нативный запуск на Mac ещё не подтверждён.** Gatekeeper, Связка ключей, вход в реальные аккаунты и актуальная авторизованная разметка Gemini остаются проверкой тестировщика. Это причина отметки предварительного выпуска.
 
+**Windows 0.14.1 также публикуется как предварительная.** Это перенос выбора Claude/Gemini в Windows-комплект; реальные аккаунты и актуальная авторизованная страница Gemini ещё требуют проверки владельцем. Основная Windows 0.13.1 для Claude остаётся доступной отдельно.
+
+В отдельном локальном QA Windows прошли 22 сценария Chrome, 22 Edge и 24 Brave. В Brave отмечено отличие списка языков; панель честно показывает его красным. Проверка функций установщика включала 25 сценариев моделирования. Шесть обычных первых/повторных запусков также прошли. Все 50 исходников сохранили хеши. Эти результаты не подтверждают реальную авторизацию в Gemini.
+
 [Подробности и пределы проверок](docs/validation.md) · [История изменений](CHANGELOG.md)
 
 ## Где находятся данные
@@ -64,7 +78,7 @@
 
 ## Для разработки
 
-Исходники сгруппированы по платформам: `macos/` и `windows/`. Скрипты не требуют React или сборщика интерфейса: страницы расширения написаны на HTML, CSS и JavaScript, запуск — Bash для macOS и PowerShell для Windows.
+Исходники сгруппированы по платформам: `macos/` и `windows/`. Windows-ветка обновляется до 0.14.1; прежняя 0.13.1 доступна в [своём теге](https://github.com/upe4d/claude-mini/tree/v0.13.1-windows/windows). Скрипты не требуют React или сборщика интерфейса: страницы расширения написаны на HTML, CSS и JavaScript, запуск — Bash для macOS и PowerShell для Windows.
 
 [Зависимости, тесты и сборка](docs/build.md)
 

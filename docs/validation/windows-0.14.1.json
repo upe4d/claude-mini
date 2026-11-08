@@ -1,0 +1,116 @@
+{
+  "passed": true,
+  "version": "0.14.1",
+  "edition": "Windows Free",
+  "at": "2026-11-08T12:27:44.140208+00:00",
+  "sourceUnchanged": true,
+  "sourceHashes": {
+    "app/FirstRunGuide.ps1": "860b3960302f20355ba44d385cfef1b23a6e85b4f14c52a4b2a97de54a0cb97b",
+    "app/Install.ps1": "d0c61b5c70b7d7e116e01086aa4c21c3a86044def7f75e780ea40691e63ba8d7",
+    "app/Launch.ps1": "69f07864286b147f007e8c1cab28fe4e4d7a5cefe585966838cbe4be5c1eb3f7",
+    "app/PhysicalPath.ps1": "ed9b46024fca509a2f02033b68a034bd5d28aeec299bf6a70a0238404b6504a9",
+    "app/ResearchRuntime.ps1": "f2ce60c4807b15db2f1c2ac697f6151219b2fffb13be4e0bde1743e961024ec3",
+    "app/Runtime.ps1": "61a3d8a9f7b15fcb296517415a43dc2feebf9ceb303104777a1886b492630e66",
+    "app/runtimes.json": "b26d0ed6e047af7341be08e1a336767be56893931865d2fd64e2714644e4c4da",
+    "app/setup-guide.js": "ed6ad3ebc745dc25e55dfadec25c82fc5bada91711bff5bb71c5b532b8d65399",
+    "app/Setup.ps1": "a279a09baf36144987fc6736d74e8961f9dd4ea5bc0b4428c423631cc8eae3d2",
+    "app/Suite.ps1": "87023305d1f520c9fe532eff04f627f4b2325b926f26b8d8a015b9ea59560b26",
+    "app/Workspace.ps1": "5a445453effa1fee9e0f6c42145be7caba3bf620c4ca70c9b8a72391fb31d349",
+    "Browser-sources.txt": "3c8ed4fd9dabc33f6211731a8d55d392fc18051a9530a4538d884ae6d191af46",
+    "extension/background.js": "bf0fa554c96f55ad23d0a134362de4894bbd5eebec511ae623dd206d3b5b3d18",
+    "extension/browser-ui.js": "4495d9f35276d3d66fa844b236d27f585b15c63dcb1695cc02d55b53f0d6b7ff",
+    "extension/capture.js": "0167718b04f050598fc72e9dce97865083808d53eefb3428e8737c4be74b85db",
+    "extension/chat-formats.js": "c6054c0d4886b5204401eb4425da8ee0ef860d8ac03d14027941b9296025fcbb",
+    "extension/config.js": "9a9bddaa99f021378e23f466036e69afd47fb6d0f4057b52ba85bc1101e6fa89",
+    "extension/connection-runtime.js": "b4d4688e199a2567e81ae3ad424a4f33d9b4389d02bf360f0b17b5c094ee11bc",
+    "extension/current.js": "5d224abfb8025e51310a6ce7f08951c10a7f6279287a8773530facb77f31dcfa",
+    "extension/export.js": "4bea3321ae7de4c83d46a0c39af82ce68803312031da90a6ea245d51d18fa044",
+    "extension/guide.html": "b8461e180374726c5fd4a6fab8637141ae1a1501b89e5a16649f7075adc60974",
+    "extension/guide.js": "1f64b252eee08f6f0035db4c0c0c19bed83583b7370b4197ec5cda71b1c4b8a9",
+    "extension/icons/icon-128.png": "513632f12cbb6923629618c53aee9f98d647034a18e06510390b2eae43b890df",
+    "extension/icons/icon-16.png": "d23123c19b01ec254cb152c933bb02465fce4db0f35da450e5712e813a873889",
+    "extension/icons/icon-32.png": "c5b1b8b5caa31719566f27a5007b762aacbbd14fe3b8ad3be52f462e33b8142e",
+    "extension/icons/icon-48.png": "dada2fecc43ed19ef9af7e0be1482bbc732b6b356e52f3b923cadecaac225fe4",
+    "extension/install-info.js": "6076452fd429f592fd2c2b3bc0b0174f2d20539a5f34a0b6909d356f1cd4393b",
+    "extension/locale-runtime.js": "fa6803d1135933e71234f4599e03ee047759f441741b54c1ad66b973d880b2a3",
+    "extension/manifest.json": "e009455a3a108091886d1a03169c2176aa0b064f3827c0cb2785f53a589e524c",
+    "extension/onboarding.html": "90691c11df827305d42d1df3885249cb99482ab4fd452df60527a1c9e1d7df1f",
+    "extension/onboarding.js": "5fbce44606b7c98532d19a669d4955bafc91106292d87bc4d9fbc01841ed58ad",
+    "extension/popup.html": "ea6867273328c0c9dd5f39f6a38d00edf4ba14547404c988d75ab64408cf7b40",
+    "extension/popup.js": "363ab106b84d4589cd362a2290f97dd16eabd17704f46ef8a0ece8c4cd27e0fa",
+    "extension/preset.js": "ab77e7c398ca945d9211ca1c81981d080ef3ea2f154fb4231d006d61601184d6",
+    "extension/preview.html": "02e453ee22d34ebeb46c6b905e419df74f35fa7e1c516037b6c5ecdb20a46fd0",
+    "extension/preview.js": "c856c59a6936f23f823ca81e27dc7603d9d26ec8df5bf5e3acb68242d451c3b7",
+    "extension/release.js": "7619930213aaa45d7628d8536e66d75afa7c4bb93cdf35f16f21fb04a61ae7a7",
+    "extension/services.js": "0ae08e9d480ae74256c36039dde9fd86f7abdf76fa15a215a2f9b4bb9f206f85",
+    "extension/sessions.js": "5fc9d0eb381ed44b91a72fda8662889f64fdb0baae03388a274f89a41452ab29",
+    "extension/startup-runtime.js": "5194078106736ce863be418cb70f75bc56b9c2c66f2a52580248a4aefbf8137e",
+    "extension/ui.css": "afd352f893fc632eb8f3aae2b3f44101109bfacc797f4491357d7dd877acb1a4",
+    "extension/ui.js": "2a7a93247e6b965e44fd1d7c5e6066184255c44881b30c6281c367da97ba3719",
+    "extension/workspace-layout.css": "9d361155d13f00a53e9ddebdad6db6fa90c7d0e75eff801a4f6fd13badcf7540",
+    "extension/workspace.html": "61f2afb12db5e73d08a96cf3594f98858a905ff0a143ff4269e1fe494f7250f7",
+    "extension/workspace.js": "b788659b0cb93c2f779aa2a74f9d937ae7329a77419d83ae0530175546e7b149",
+    "Launch.cmd": "8cf8fff4f200b8a8df09fc7fb4b4a918b33cc29c2bf4eec6968d3c41678c8ed8",
+    "Release.json": "332815fd9c6f462ef38cf629b5a70cade00ed3c81cdd233429bb553deb6ce5a3",
+    "Setup.cmd": "37b85686d0fd924a0a9ff59fffddada576984b58b4843f03ac7adfadcaed8bb6",
+    "Начните здесь.html": "12a3ec09a396e7afd5a8b7a5ede83511e65ae0a8342b5ea1fea981801b1562ee",
+    "ПРОЧИТАЙТЕ.txt": "f76b683b694c81300811e8529ebff603c17e06713074cec7dbe8258daa89aa8a"
+  },
+  "scope": "Original portable Windows runtime binaries and actual unpacked extension; local intercepted Claude/Gemini fixtures only. Real service login and production service behavior are not validated.",
+  "integration": {
+    "chrome": {
+      "passed": true,
+      "checks": 22,
+      "browserVersion": "156.0.8078.47",
+      "pageErrors": 0
+    },
+    "edge": {
+      "passed": true,
+      "checks": 22,
+      "browserVersion": "156.0.4314.50",
+      "pageErrors": 0
+    },
+    "brave": {
+      "passed": true,
+      "checks": 24,
+      "browserVersion": "156.0.8078.48",
+      "pageErrors": 0
+    }
+  },
+  "nativeStartup": {
+    "passed": true,
+    "checks": 6,
+    "scope": "Actual Windows Start-Workspace, stock runtime executables, own profiles; only remote debugging port added to production launch flags; no service account"
+  },
+  "installer": {
+    "passed": true,
+    "checks": 25,
+    "scope": "Real PowerShell installer functions with synthetic profile files, stubbed runtime extraction and process launch; no real account or owner profile"
+  },
+  "knownLimitations": [
+    {
+      "code": "BRAVE_LANGUAGE_LIST",
+      "browser": "Brave 1.98.60",
+      "selected": [
+        "en-GB",
+        "en"
+      ],
+      "actual": [
+        "en-GB"
+      ],
+      "status": "The actual popup displays the mismatch in red; timezone UTC and CPU 4 still match. TXT/MD/JSON export and PDF print request pass for both services.",
+      "baseline0131Confirmed": true,
+      "localeRuntimeHash": "fa6803d1135933e71234f4599e03ee047759f441741b54c1ad66b973d880b2a3",
+      "cause": "The exact browser-internal reason is not established by these tests."
+    }
+  ],
+  "notTested": [
+    "Authenticated Claude/Gemini accounts",
+    "Production DOM changes",
+    "Actual macOS hardware",
+    "Physical PDF save dialog",
+    "Full new runtime extraction/configure run: original extracted binaries were reused; install filesystem logic tested separately with a runtime stub"
+  ],
+  "ownerProfilesModified": false,
+  "publicationNote": "Absolute local source path and links to unpublished raw harness reports omitted; measured results and all source SHA-256 unchanged."
+}

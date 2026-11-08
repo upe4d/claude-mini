@@ -35,9 +35,9 @@ function Prepare-Workspace([string]$Root,[string]$Browser,[string]$Locale,[strin
         $profile=Join-Path $Root 'profile';$default=Join-Path $profile 'Default';[IO.Directory]::CreateDirectory($default)|Out-Null
         Write-JsonFile (Join-Path $default 'Preferences') @{intl=@{accept_languages=$Locale;selected_languages=$Locale};browser=@{check_default_browser=$false};distribution=@{skip_first_run_ui=$true}}
         Write-JsonFile (Join-Path $profile 'Local State') @{intl=@{app_locale=$Locale.Split(',')[0]}}
-        $config=[pscustomobject]@{schema=1;edition='portable-browser';browser=$Browser;version='0.13.1';profileLocale=$Locale.Split(',')[0];preset=@{timezone=$Timezone;locale=$Locale;cores=$Cores;ui='ru'}}
+        $config=[pscustomobject]@{schema=1;edition='portable-browser';browser=$Browser;version='0.14.1';profileLocale=$Locale.Split(',')[0];preset=@{timezone=$Timezone;locale=$Locale;cores=$Cores;ui='ru'}}
     }
-    $config.version='0.13.1';Write-JsonFile (Join-Path $Root 'workspace.json') $config
+    $config.version='0.14.1';Write-JsonFile (Join-Path $Root 'workspace.json') $config
     Write-InstallPreset $Root $Browser $config.preset
     [void](Write-FirstRunGuide $Root $Browser)
     return $Root

@@ -73,7 +73,7 @@
 
 <section class="step" data-step="3" aria-labelledby="step-title-3" hidden>
 <span class="number">ШАГ 4</span>
-<h2 id="step-title-3">Откройте рабочее место Claude.</h2>
+<h2 id="step-title-3">Откройте рабочее место Claude mini.</h2>
 <p>После подключения расширение откроет рабочее место в новой вкладке. Если этого не произошло, скопируйте адрес зелёной кнопкой ниже.</p>
 <label class="field-label" for="workspace-address">Адрес рабочего места</label>
 <input class="address" id="workspace-address" value="%%ONBOARDING_URL%%" readonly spellcheck="false">

@@ -3,7 +3,7 @@ Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 . (Join-Path $PSScriptRoot 'Suite.ps1')
 [Windows.Forms.Application]::EnableVisualStyles()
-$form=New-Object Windows.Forms.Form;$form.Text='Claude mini 0.13.1 — Chrome, Edge и Brave';$form.StartPosition='CenterScreen'
+$form=New-Object Windows.Forms.Form;$form.Text='Claude mini 0.14.1 — Claude и Gemini';$form.StartPosition='CenterScreen'
 $form.ClientSize=New-Object Drawing.Size(900,740);$form.MinimumSize=New-Object Drawing.Size(820,680);$form.AutoScaleMode='Dpi'
 $form.Font=New-Object Drawing.Font('Segoe UI',12);$form.BackColor=[Drawing.ColorTranslator]::FromHtml('#f5f2eb')
 $script:Step=0;$script:Worker=$null;$script:Target=$null
@@ -31,7 +31,7 @@ $shortcut=New-Object Windows.Forms.CheckBox;$shortcut.Text='Создать от�
 $pages[0].Controls.Add((Label 'Обновление: выберите прежнюю рабочую папку с suite.json или workspace.json. Старый профиль Brave сохранится. Перед обновлением закройте его окна. Для трёх браузеров нужно 5 ГБ свободного места.' 11))
 $pages[1].Controls.Add((Label 'Сейчас установим выбранные браузеры.' 18))
 $pages[1].Controls.Add((Label 'После установки мастер в браузере покажет по одному действию:' 14))
-foreach($line in @('1. Нажать Keep it, если браузер спросит.','2. Проверить и закрепить расширение.','3. Выбрать English, пояс региона подключения и CPU.','4. Проверить WebRTC и подключение.','5. Открыть Claude и сверить показания.')){$pages[1].Controls.Add((Label $line 15))}
+foreach($line in @('1. Нажать Keep it, если браузер спросит.','2. Проверить и закрепить расширение.','3. Выбрать English, пояс региона подключения и CPU.','4. Проверить WebRTC и подключение.','5. Выбрать Claude или Gemini и сверить показания.')){$pages[1].Controls.Add((Label $line 15))}
 $pages[1].Controls.Add((Label 'Если используете VPN, подберите пояс его выбранного региона: Германия — Berlin, Великобритания — London. Москву автоматически не подставляйте.' 12))
 $pages[1].Controls.Add((Label 'Нажмите «Установить браузеры». Ваши обычные браузеры и их профили останутся отдельными.' 12))
 $installLabel=Label 'Подготовка…' 17;$pages[2].Controls.Add($installLabel)

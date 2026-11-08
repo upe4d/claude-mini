@@ -7,8 +7,8 @@ async function load() {
   chat=(await chrome.storage.session.get(key))[key];if(!chat)throw Error('MISSING');
   document.getElementById('chat-title').textContent=chat.title;
   document.getElementById('meta').textContent=text('Сообщений: ','Messages: ')+chat.messages.length;
-  for(const message of chat.messages){const article=document.createElement('article'),h=document.createElement('h2'),body=document.createElement('div');h.textContent=message.role==='user'?text('Вы','You'):'Claude';body.className='message-text';body.textContent=message.text;article.append(h,body);document.getElementById('messages').append(article);}
-  document.querySelectorAll('[data-format]').forEach(button=>{button.disabled=false;button.onclick=()=>{const format=button.dataset.format;download(ChatFormats.render(chat,format),format==='json'?'application/json;charset=utf-8':'text/plain;charset=utf-8','claude-chat-'+new Date().toISOString().replace(/[:.]/g,'-')+'.'+format);status.textContent=text('Скачивание начато.','Download started.');};});
+  for(const message of chat.messages){const article=document.createElement('article'),h=document.createElement('h2'),body=document.createElement('div');h.textContent=message.role==='user'?text('Вы','You'):(chat.service?.label||'Ассистент');body.className='message-text';body.textContent=message.text;article.append(h,body);document.getElementById('messages').append(article);}
+  document.querySelectorAll('[data-format]').forEach(button=>{button.disabled=false;button.onclick=()=>{const format=button.dataset.format;download(ChatFormats.render(chat,format),format==='json'?'application/json;charset=utf-8':'text/plain;charset=utf-8',(chat.service?.id||'chat')+'-chat-'+new Date().toISOString().replace(/[:.]/g,'-')+'.'+format);status.textContent=text('Скачивание начато.','Download started.');};});
   document.getElementById('print').disabled=false;document.getElementById('clear').disabled=false;
 }
 document.getElementById('print').onclick=()=>window.print();

@@ -1,5 +1,5 @@
 "use strict";
-importScripts('preset.js','config.js','locale-runtime.js','sessions.js','connection-runtime.js','startup-runtime.js');
+importScripts('services.js','preset.js','config.js','locale-runtime.js','sessions.js','connection-runtime.js','startup-runtime.js');
 const settingsRead = async () => {
   const saved={...Product.defaults, ...(await chrome.storage.local.get('settings')).settings};
   if(!Product.cpu)saved.cores=0;
@@ -25,7 +25,7 @@ chrome.runtime.onMessage.addListener((message, sender, reply) => {
   try { url = new URL(sender.url); } catch { return; }
   if (sender.id !== chrome.runtime.id || url.protocol !== 'chrome-extension:' || url.host !== chrome.runtime.id || !pages.has(url.pathname)) return;
   const tasks = {
-    state: async () => ({settings:await settingsRead(),privacy:await privacyRead(),sessions:await BrowserSessions.list(),...await Connection.snapshot()}),
+    state: async () => ({settings:await settingsRead(),privacy:await privacyRead(),sessions:await BrowserSessions.list(),...await Connection.snapshot(),serviceLaunches:await chrome.storage.local.get(['lastLaunch:claude','lastLaunch:gemini'])}),
     save: async () => { const value=Product.validate(message.settings); await chrome.storage.local.set({settings:value}); return {settings:value}; },
     importSettings: async () => {
       if(message.document?.format!=='claude-mini-browser-settings'||message.document?.schemaVersion!==1)throw Error('INVALID_SETTINGS');
@@ -36,11 +36,11 @@ chrome.runtime.onMessage.addListener((message, sender, reply) => {
       const saved=(await chrome.storage.local.get('previousSettings')).previousSettings;if(!saved)throw Error('NO_BACKUP');
       const settings=Product.validate(saved);await chrome.storage.local.set({settings});return {settings};
     },
-    launch: async () => { const settings=await settingsRead();if(settings.timezone==='Europe/Moscow')throw Error('SELECT_SUPPORTED_TIMEZONE');const tab=await BrowserSessions.launch(settings);await chrome.storage.local.set({lastLaunchSettings:settings});return {tabId:tab.id}; },
+    launch: async () => { const settings=await settingsRead();const tab=await BrowserSessions.launch(settings);const key='lastLaunch:'+settings.service;await chrome.storage.local.set({[key]:settings,lastLaunchSettings:settings});return {tabId:tab.id}; },
     privacy: async () => { if(typeof message.enabled !== 'boolean') throw Error('INVALID_SETTINGS'); return {privacy:await privacySet(message.enabled)}; },
     'connection.check': async()=>Connection.check(),
     'connection.remember': async()=>Connection.remember(),
-    'onboarding.complete': async()=>{const s=await settingsRead();if(!s.timezone||!s.locale)throw Error('SELECT_SETTINGS');await chrome.storage.local.set({onboardingComplete:true});return {};},
+    'onboarding.complete': async()=>{const s=await settingsRead();Product.validate(s);await chrome.storage.local.set({onboardingComplete:true});return {};},
     resetTabs: async () => { await BrowserSessions.clearAndReload(); return {}; },
   };
   if (!Object.hasOwn(tasks, message.type)) return;
